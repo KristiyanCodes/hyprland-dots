@@ -23,4 +23,4 @@ xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 zsh
 
-note #fonts are optional but they will help with some rndering of icons, recomended to keer ttf-jetbrains-mono-nerd
+#note: fonts are optional but they will help with some rndering of icons, recomended to keer ttf-jetbrains-mono-nerd
