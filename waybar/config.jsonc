@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "width": 1920,
+    "height": 30,
+    "modules_left": ["hyprland/workspaces", "cava"],
+    "modules_middle": ["clock"],
+    "modules_right": ["network", "wireplumber", "backlight/slider", "group/smth", "memory", "battery", "tray"],
+    
+    "group/smth": {
+        "orientation": "horizontal",
+        "modules": ["cpu", "temperature"]
+    },
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "sort-by-name": true,
+        "sort-by-coordinates": false,
+        "active-only": false,
+        "on-click": "activate"
+    },
+    "cava": {
+        "cava_config": "~/.config/cava/config",
+        "method": "raw",
+        "framerate": 30
+    },
+    "clock": {
+        "interval": 1,
+        "format": "{:%A %d %b %Y}: {:%I}:{:%M}",
+        "format-alt": "{:%A %d %b %Y}: {:%H}:{:%M}",
+        "timezone": "Europe/London",
+        "locale": "en_GB.UTF-8"
+    },
+    "network": {
+        "interface": "wlp2s0",
+        "interval": 60,
+        "family": "ipv4",
+        "format": "{ifname}",
+        "format-ethernet": "{ipaddr}",
+        "format-alt": "{ifname}: {ipaddr}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"]
+    },
+    "wireplumber": {
+        "format": "{volume}%",
+        "format-muted": "󰝟",
+        "format-source": "{volume}%",
+        "format-source-muted": "󰝟"
+    },
+    "backlight/slider": {
+        "min": 0,
+        "max": 100,
+        "orientation": "horizontal",
+        "device": "amdgpu_bl1"
+    },
+    "cpu": {
+        "interval": 10,
+        "format": "{usage}%, running at {avg_frequency}"
+    },
+    "temperature": {
+        "format": "{temperatureC}°C"
+    },
+    "battery": {
+        "design-capacity": false,
+        "interval": 35,
+        "format": "{capacity}%"
+    },
+    "memory": {
+        "interval": 15,
+        "format": "{percentage}% full, swap: {swapPercentage}% full"
+    },
+    "tray": {
+    }
+}

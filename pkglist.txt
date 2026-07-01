@@ -1,0 +1,26 @@
+alacritty ##optional, you can use yur own terminal if you want but you will have to change binds
+awww
+blueman
+brightnessctl
+cliphist
+grim
+hypridle
+hyprland
+hyprlock
+mesa
+noto-fonts-cjk
+pavucontrol
+pipewire-pulse
+slurp
+swappy
+swaync
+ttf-jetbrains-mono-nerd
+uwsm
+waybar
+woff2-font-awesome
+wofi
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
+zsh
+
+note #fonts are optional but they will help with some rndering of icons, recomended to keer ttf-jetbrains-mono-nerd
