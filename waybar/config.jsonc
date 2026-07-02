@@ -3,9 +3,9 @@
     "position": "top",
     "width": 1920,
     "height": 30,
-    "modules_left": ["hyprland/workspaces", "cava"],
-    "modules_middle": ["clock"],
-    "modules_right": ["network", "wireplumber", "backlight/slider", "group/smth", "memory", "battery", "tray"],
+    "modules-left": ["hyprland/workspaces", "cava"],
+    "modules-middle": ["clock"],
+    "modules-right": ["network", "wireplumber", "backlight/slider", "group/smth", "memory", "battery", "tray"],
     
     "group/smth": {
         "orientation": "horizontal",
@@ -49,7 +49,7 @@
         "min": 0,
         "max": 100,
         "orientation": "horizontal",
-        "device": "amdgpu_bl1"
+        "device": "amdgpu_bl1"  //change this to the name of your actual device
     },
     "cpu": {
         "interval": 10,
