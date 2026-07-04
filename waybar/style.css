@@ -1,0 +1,65 @@
+window#waybar {
+	background-color: transparent;
+}
+#workspaces button {
+    background-color: #2e3440;
+    color: #e5e9f0;
+    border-radius: 5px;
+    margin: 1px;
+    padding: 1px 3px;
+    min-width: 20px;
+    min-height: 24px;
+    font-size: 13px;
+}
+#workspaces button.active {
+    background-color: #4c566a;
+    color: #eceff4;
+}
+
+#workspaces buttoin:hover {
+    background-color: #88c0d0;
+    color: #2e3440;
+}
+#clock,
+#network,
+#wireplumber,
+#backlight-slider,
+#cpu,
+#temperature,
+#memory,
+#battery,
+#tray {
+    background-color: #2e3440;
+    color: #e5e9f0;
+    border-radius: 5px;
+    padding: 1px 3px;
+    margin: 3px 3px;
+    min-height: 18px;
+    font-size: 10px;
+}
+
+#clock {
+    background-color: #4c566a;
+    color: #eceff4;
+    font-weight: bold;
+}
+#smth {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+#backlight-slider slider {
+    min-height: 10px;
+    min-width: 10px;
+    background-color: #8fbcbb;
+    border-radius: 5px;
+}
+#backlight-slider trough {
+    min-width: 100px;
+    border-radius: 5px;
+    background-color: #434c5e;
+}
+#battery.critical:not(.charging) {
+    background-color: #bf616a;
+    color: #eceff4;
+}

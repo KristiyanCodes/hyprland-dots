@@ -3,9 +3,9 @@
     "position": "top",
     "width": 1920,
     "height": 30,
-    "modules-left": ["hyprland/workspaces", "cava"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-middle": ["clock"],
-    "modules-right": ["network", "wireplumber", "backlight/slider", "group/smth", "memory", "battery", "tray"],
+    "modules-right": ["network", "wireplumber", "backlight/slider", "backlight", "group/smth", "memory", "battery", "tray"],
     
     "group/smth": {
         "orientation": "horizontal",
@@ -17,11 +17,6 @@
         "sort-by-coordinates": false,
         "active-only": false,
         "on-click": "activate"
-    },
-    "cava": {
-        "cava_config": "~/.config/cava/config",
-        "method": "raw",
-        "framerate": 30
     },
     "clock": {
         "interval": 1,
@@ -53,20 +48,26 @@
     },
     "cpu": {
         "interval": 10,
-        "format": "{usage}%, running at {avg_frequency}"
+        "format": "{usage}%, running at {avg_frequency}ghz "
     },
     "temperature": {
-        "format": "{temperatureC}°C"
+        "format": "{temperatureC}°C 󰔏"
     },
     "battery": {
         "design-capacity": false,
         "interval": 35,
-        "format": "{capacity}%"
+        "format": "{capacity}% 󰄌"
     },
     "memory": {
         "interval": 15,
-        "format": "{percentage}% full, swap: {swapPercentage}% full"
+        "format": "ram {percentage}% full, swap: {swapPercentage}% full "
     },
     "tray": {
+        "spacing": 5
+    },
+    "backlight": {
+        "interval": 1,
+	"device": "amdgpu_bl1", //change this to the name of you actual device
+	"format": "{percent}% 󰹑 "
     }
 }

@@ -1,0 +1,18 @@
+* {
+	font-family: JetBrainsMonoNL Nerd Font Propo;
+	border-radius: 5;
+	border: none;
+	margin: 0;
+	padding: 0;
+}
+
+window#waybar {
+	color: transparent;
+	border-radius: 0;
+
+}
+#workspaces button {
+	background-color: #b48ead;
+	color: #3b4252;
+	border-radius: 10px;
+}
