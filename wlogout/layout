@@ -1,6 +1,6 @@
 {
     "label" : "lock",
-    "action" : "pidof hyprlock || hyprlock && playerctl pause && nmcli networking off",
+    "action" : "pidof hyprlock || hyprlock && playerctl pause && nmcli radio wifi off",
     "text" : "Lock",
     "keybind" : "l"
 }
