@@ -15,13 +15,13 @@ a list of packages that you need are in pkglist.txt
 | super + 6                  | go to workspace 6                                  |
 | super + 7                  | go to workspace 7                                  |
 | super + 8                  | go to workspace 8                                  |
-| super + 9                  | go to workcpace 9                                  |
-| super + 0                  | go to workspace 8                                  |
+| super + 9                  | go to workspace 9                                  |
+| super + 0                  | go to workspace 10                                 |
 | super + return             | open alacritty(the terminal)                       |
 | super + shift + 1          | move focused window to workspace 1                 |
 | super + shift + 2          | move focused window to workspace 2                 |
 | super + shift + 3          | move focused window to workspace 3                 |
-| super + shift + 4          | move focused window to workspcae 4                 |
+| super + shift + 4          | move focused window to workspace 4                 |
 | super + shift + 5          | move focused window to workspace 5                 |
 | super + shift + 6          | move focused window to workspace 6                 |
 | super + shift + 7          | move focused window to workspace 7                 |
@@ -29,12 +29,12 @@ a list of packages that you need are in pkglist.txt
 | super + shift + 9          | move focused window to workspace 9                 |
 | super + shift + 0          | move focused window to workspace 10                |
 | super + f                  | make the focused window fullscreen                 |
-| super + left mouse button  | move fociused window                               |
+| super + left mouse button  | move focused window                                |
 | super + right mouse button | resize focused window                              |
 | mute                       | mute audio                                         |
 | raise volume               | increase volume by 5%                              |
 | lower volume               | lower volume by 5%                                 |
-| brightness down            | decrease brighntess by 5%                          |
+| brightness down            | decrease brightness by 5%                          |
 | brightness up              | increase brightness by 5%                          |
 | super + left arrow button  | move focus to window on the left                   |
 | super + right arrow button | move focus to window on the right                  |
@@ -54,8 +54,7 @@ a list of packages that you need are in pkglist.txt
 | play                       | unpause the player                                 |
 | next                       | tell the player to play next track                 |
 | previous                   | tell the player to play previous track             |
-| super + v                  | open clipboard menu, selected item will be copyed  |
+| super + v                  | open clipboard menu, selected item will be copied  |
 | super + ctrl + v           | open clipboard menu: selected item will be deleted |
 | super + l                  | lock                                               |
 | super + shift + l          | open logout menu                                   |
-
