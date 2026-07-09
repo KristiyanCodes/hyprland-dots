@@ -1,10 +1,9 @@
 {
     "layer": "top",
     "position": "top",
-    "width": 1920,
     "height": 30,
     "modules-left": ["hyprland/workspaces"],
-    "modules-middle": ["clock"],
+    "modules-center": ["clock"],
     "modules-right": ["network", "wireplumber", "backlight/slider", "backlight", "group/smth", "memory", "battery", "tray"],
     
     "group/smth": {
@@ -20,10 +19,10 @@
     },
     "clock": {
         "interval": 1,
-        "format": "{:%A %d %b %Y}: {:%I}:{:%M}",
-        "format-alt": "{:%A %d %b %Y}: {:%H}:{:%M}",
-        "timezone": "Europe/London",
-        "locale": "en_GB.UTF-8"
+	"format": "{:%A %d %b %Y: %I:%M %p}",
+	"format-alt": "{:%A %d %b %Y: %H:%M}",
+	"timezone": "Europe/London",
+	"locale": "en_GB.UTF-8"
     },
     "network": {
         "interface": "wlp2s0",
