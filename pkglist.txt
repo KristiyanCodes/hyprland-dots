@@ -1,4 +1,4 @@
-alacritty ##optional, you can use yur own terminal if you want but you will have to change binds
+alacritty
 awww
 blueman
 brightnessctl
@@ -24,4 +24,3 @@ xdg-desktop-portal-hyprland
 zsh
 wlogout
 playerctl
-#note: fonts are optional but they will help with some rndering of icons, recomended to keep ttf-jetbrains-mono-nerd

@@ -58,3 +58,11 @@ a list of packages that you need are in pkglist.txt
 | super + ctrl + v           | open clipboard menu: selected item will be deleted |
 | super + l                  | lock                                               |
 | super + shift + l          | open logout menu                                   |
+
+# how to use the dotfiles 
+install the packages in pkglist.txt 
+arch: yay -S $(cat pkglist.txt)
+note: the fontsfonts are optional but they will help with some rndering of icons, recomended to keep ttf-jetbrains-mono-nerd, alacritty is also optional but you wilhave to change the bind if you wanna use your own terminal
+then copy or move the directories into your ~/.config directory:
+copy: cp -r wlogout hypr waybar ~/.config
+move: mv -r wlogout hypr waybar ~/.config
