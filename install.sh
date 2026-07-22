@@ -9,10 +9,7 @@ ls $HOME/.config/ >/dev/null || { echo "$HOME/.config not found, creating now"; 
 
 echo "copying dotfiles in 5 seconds, if you have current dotfiles that you dont want overwritten, interrupt (by ctrl+c) this script now and back up your dotfiles"
 sleep 5
-cp -rv ./alacritty $HOME/.config
-cp -rv ./hypr $HOME/.config
-cp -rv ./swaync $HOME/.config
-cp -rv ./waybar $HOME/.config
-cp -rv ./wlogout $HOME/.config
+cp -rv ./.config/* $HOME/.config
+cp -rv ./.config/.* $HOME/.config
 
 echo "dotfiles copied, to start hyprland type start-hyprland or hyprland in your terminal"

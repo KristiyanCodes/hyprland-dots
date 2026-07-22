@@ -70,6 +70,8 @@ arch: yay -S $(cat pkglist.txt)
 note: the fonts fonts are optional but they will help with some rndering of icons,it recomended to keep ttf-jetbrains-mono-nerd, alacritty is also optional but you will have to change the bind if you wanna use your own terminal
 - copy/move dotfiles
 to move:
-mv -rv alacritty hypr swaync waybar wlogout $HOME/.config
+mv -v ./.config/* $HOME/.config
+mv -c ./.config/.* $HOME/.config
 to copy:
-cp -rv alacritty hypr swaync waybar wlogout $HOME/.config
+cp -rv ./.config/* $HOME/.config
+cp -rv ./.config/.* $HOME/.config
