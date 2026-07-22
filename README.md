@@ -76,7 +76,7 @@ note: the fonts fonts are optional but they will help with some rndering of icon
 to move:
 ```bash
 mv -v ./.config/* $HOME/.config
-mv -c ./.config/.* $HOME/.config
+mv -v ./.config/.* $HOME/.config
 ```
 to copy:
 ```bash
