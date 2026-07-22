@@ -62,11 +62,15 @@ a list of packages that you need are in pkglist.txt
 # how to use the dotfiles 
 method 1: run install.sh
 note: the script only works on arch for now
+```bash
 chmod +x install.sh
 ./install.sh
+```
 method 2: install the dependencies and move/ copy dotfiles manualy
-- install the packages in pkglist.txt 
+- install the packages in pkglist.txt
+```bash
 arch: yay -S $(cat pkglist.txt)
+```
 note: the fonts fonts are optional but they will help with some rndering of icons,it recomended to keep ttf-jetbrains-mono-nerd, alacritty is also optional but you will have to change the bind if you wanna use your own terminal
 - copy/move dotfiles
 to move:
