@@ -60,9 +60,16 @@ a list of packages that you need are in pkglist.txt
 | super + shift + l          | open logout menu                                   |
 
 # how to use the dotfiles 
-install the packages in pkglist.txt 
+method 1: run install.sh
+note: the script only works on arch for now
+chmod +x install.sh
+./install.sh
+method 2: install the dependencies and move/ copy dotfiles manualy
+- install the packages in pkglist.txt 
 arch: yay -S $(cat pkglist.txt)
-note: the fontsfonts are optional but they will help with some rndering of icons, recomended to keep ttf-jetbrains-mono-nerd, alacritty is also optional but you wilhave to change the bind if you wanna use your own terminal
-then copy or move the directories into your ~/.config directory:
-copy: cp -r wlogout hypr waybar ~/.config
-move: mv -r wlogout hypr waybar ~/.config
+note: the fonts fonts are optional but they will help with some rndering of icons,it recomended to keep ttf-jetbrains-mono-nerd, alacritty is also optional but you will have to change the bind if you wanna use your own terminal
+- copy/move dotfiles
+to move:
+mv -rv alacritty hypr swaync waybar wlogout $HOME/.config
+to copy:
+cp -rv alacritty hypr swaync waybar wlogout $HOME/.config
