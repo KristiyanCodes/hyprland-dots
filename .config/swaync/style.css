@@ -1,0 +1,13 @@
+* {
+    all: unset;
+    font-family: "JetBrainsMonoNL Nerd Font Mono";
+    font-size: 10px;
+    transition: 200ms;
+}
+.control-center {
+    border: 5;
+    opacity: 0.0;
+    color: transparent;
+    border-color: #2e3440;
+    padding-bottom: 10px;
+}
