@@ -1,13 +1,34 @@
 * {
-    all: unset;
     font-family: "JetBrainsMonoNL Nerd Font Mono";
     font-size: 10px;
     transition: 200ms;
 }
 .control-center {
-    border: 5;
-    opacity: 0.0;
-    color: transparent;
-    border-color: #2e3440;
+    border: 3px solid #2e3440;
+    border-radius: 12px;
+    opacity: 1.0;
+    color: #4c566a;
     padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.widget {
+    padding-top: 3px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.widget-title {
+    margin: 3px;
+    padding: 4px 10px;
+}
+.widget-title > button > label {
+    color: #eceff4;
+    opacity: 1.0
+}
+.widget-title > button {
+    color: #2e3440;
+    opacity: 1.0;
+}
+.widget-title > label {
+    color: #eceff4;
 }
