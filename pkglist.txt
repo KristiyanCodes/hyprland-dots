@@ -18,7 +18,7 @@ ttf-jetbrains-mono-nerd
 uwsm
 waybar
 woff2-font-awesome
-wofi
+rofi
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 zsh
