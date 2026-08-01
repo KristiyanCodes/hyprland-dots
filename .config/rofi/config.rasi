@@ -1,4 +1,3 @@
-@theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 configuration {
 	modes: "drun,window,ssh,run";
 	font: "JetBrainsMono Nerd Font";
@@ -166,4 +165,143 @@ configuration {
       directories-first: true;
       sorting-method:    "name";
   }
+}
+* {
+    /** Nord theme **/
+    /** Polar Night **/
+    
+    nord0:                        rgb ( 46, 52, 64 );
+    nord1:                        rgb ( 59, 66, 82 );
+    nord2:                        rgb ( 67, 76, 94 );
+    nord3:                        rgb ( 76, 86, 106 );
+    /** Snow Storm **/
+
+    nord4:                        rgb ( 216, 222, 233 );
+    nord5:                        rgb ( 229, 233, 240 );
+    nord6:                        rgb ( 236, 239, 244 );
+    /** Frost **/
+
+    nord7:                        rgb ( 143, 188, 187 );
+    nord8:                        rgb ( 136, 192, 208 );
+    nord9:                        rgb ( 129, 161, 193 );
+    nord10:                       rgb ( 94, 129, 172 );
+    /** Aurora **/
+
+    nord11:                       rgb ( 191, 97, 106 );
+    nord12:                       rgb ( 208, 135, 112 );
+    nord13:                       rgb ( 235, 203, 139 );
+    nord14:                       rgb ( 163, 190, 140 );
+    nord15:                       rgb ( 180, 142, 173 );
+}
+window {
+    padding:          5;
+    background-color: var(nord0);
+    border:           1;
+}
+mainbox {
+    padding: 0;
+    border:  0;
+}
+message {
+    padding:      1px ;
+    border-color: var(nord3);
+    border:       2px 0px 0px ;
+}
+textbox {
+    text-color: var(nord6);
+}
+listview {
+    padding:      2px 0px 0px ;
+    scrollbar:    true;
+    border-color: var(nord0);
+    spacing:      2px ;
+    fixed-height: 0;
+    border:       2px 0px 0px ;
+}
+element {
+    padding: 1px ;
+    border:  0;
+}
+element normal.normal {
+    background-color: var(nord0);
+    text-color:       var(nord6);
+}
+element normal.urgent {
+    background-color: var(nord12);
+    text-color:       var(nord4);
+}
+element normal.active {
+    background-color: var(nord3);
+    text-color:       var(nord4);
+}
+element selected.normal {
+    background-color: var(nord3);
+    text-color:       var(nord6);
+}
+element selected.urgent {
+    background-color: var(nord11);
+    text-color:       var(nord6);
+}
+element selected.active {
+    background-color: var(nord2);
+    text-color:       var(nord5);
+}
+element alternate.normal {
+    background-color: var(nord0);
+    text-color:       var(nord6);
+}
+element alternate.urgent {
+    background-color: var(nord12);
+    text-color:       var(nord4);
+}
+element alternate.active {
+    background-color: var(nord3);
+    text-color:       var(nord6);
+}
+element-text {
+    background-color: inherit;
+    text-color:       inherit;
+}
+scrollbar {
+    width:        4px ;
+    padding:      0;
+    handle-width: 8px ;
+    border:       0;
+    handle-color: var(nord6);
+}
+mode-switcher {
+    border-color: var(nord14);
+    border:       2px 0px 0px ;
+}
+button {
+    spacing:    0;
+    text-color: var(nord6);
+}
+button selected {
+    background-color: var(nord3);
+    text-color:       var(nord4);
+}
+inputbar {
+    padding:    1px ;
+    spacing:    0;
+    text-color: var(nord6);
+    children:   [ "prompt","textbox-prompt-colon","entry","case-indicator" ];
+}
+case-indicator {
+    spacing:    0;
+    text-color: var(nord6);
+}
+entry {
+    spacing:    0;
+    text-color: var(nord6);
+}
+prompt {
+    spacing:    0;
+    text-color: var(nord6);
+}
+textbox-prompt-colon {
+    margin:     0px 0.3000em 0.0000em 0.0000em ;
+    expand:     false;
+    str:        ":";
+    text-color: var(nord6);
 }
