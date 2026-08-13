@@ -1,0 +1,104 @@
+{
+    "display": {
+        "separator": ": "
+    },
+    "logo": {
+	"type": "auto"
+    },
+    "general": {
+
+    },
+    "modules": [
+	{ 
+		"type" : "custom",
+		"format": "┌──────────software info──────────┐"
+	},
+	
+	{
+        	"type" : "OS",
+		"key" : "│ OS"
+	},
+	{
+		"type" : "Kernel",
+		"key" : "│ Kernel"
+	},
+	{
+		"type" : "Packages",
+		"key" : "│ Packages"
+	},
+	{
+		"type" : "custom",
+		"format" : "└─────────────────────────────────┘"
+	},
+	{
+		"type" : "custom",
+		"format" : "┌──────────hardware info──────────┐"
+	},
+	{
+		"type" : "CPU",
+		"key"  : "│ CPU"
+	},
+	{
+		"type" : "GPU",
+		"key" : "│ GPU"
+	},
+	{
+        	"type" : "Host",
+		"key": "│ Host"
+	},
+	{
+		"type" : "Monitor",
+		"key" : "│ Monitor ({2})"
+	},
+	{
+		"type" : "custom",
+		"format": "└─────────────────────────────────┘"
+	},
+	{
+		"type" : "custom",
+		"format" : "┌──────────performance──────────┐"
+
+        },
+	{
+		"type": "CPUUsage",
+		"key": "│ CPU Usage"
+	},
+        {
+		"type" : "Memory",
+		"key" : "│ Memory"
+	},
+	{
+		"type" : "Uptime",
+		"key" : "│ Uptime"
+	},
+	{
+        	"type" : "Battery",
+		"key" : "│ Battery ({2})"
+	},
+	{
+        	"type" : "Disk",
+		"key" : "│ Disk ({1})"
+	},
+
+	{
+		"type" : "custom",
+		"format" : "└───────────────────────────────┘"
+        },
+	{
+		"type" : "custom",
+		"format" : "┌──────────connection──────────┐"
+	},
+	{
+		"type": "WiFi",
+		"key" : "│ WiFi"
+	},
+	{
+		"type" : "LocalIp",
+		"key" : "│ Local IP ({2})"
+	},
+	{
+		"type" : "custom",
+		"format" : "└──────────────────────────────┘"
+	}
+    ]
+}
