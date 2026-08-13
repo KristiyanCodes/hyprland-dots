@@ -168,25 +168,25 @@ configuration {
 }
 * {
     /** Nord theme **/
-    /** Polar Night **/
     
+    /** Polar Night **/
     nord0:                        rgb ( 46, 52, 64 );
     nord1:                        rgb ( 59, 66, 82 );
     nord2:                        rgb ( 67, 76, 94 );
     nord3:                        rgb ( 76, 86, 106 );
-    /** Snow Storm **/
 
+    /** Snow Storm **/
     nord4:                        rgb ( 216, 222, 233 );
     nord5:                        rgb ( 229, 233, 240 );
     nord6:                        rgb ( 236, 239, 244 );
-    /** Frost **/
 
+    /** Frost **/
     nord7:                        rgb ( 143, 188, 187 );
     nord8:                        rgb ( 136, 192, 208 );
     nord9:                        rgb ( 129, 161, 193 );
     nord10:                       rgb ( 94, 129, 172 );
+    
     /** Aurora **/
-
     nord11:                       rgb ( 191, 97, 106 );
     nord12:                       rgb ( 208, 135, 112 );
     nord13:                       rgb ( 235, 203, 139 );
@@ -217,6 +217,8 @@ listview {
     spacing:      2px ;
     fixed-height: 0;
     border:       2px 0px 0px ;
+    lines:        15;
+    columns:      2;
 }
 element {
     padding: 1px ;
@@ -227,32 +229,32 @@ element normal.normal {
     text-color:       var(nord6);
 }
 element normal.urgent {
-    background-color: var(nord12);
+    background-color: var(nord11);
     text-color:       var(nord4);
 }
 element normal.active {
     background-color: var(nord3);
-    text-color:       var(nord4);
+    text-color:       var(nord6);
 }
 element selected.normal {
-    background-color: var(nord3);
-    text-color:       var(nord6);
+    background-color: var(nord4);
+    text-color:       var(nord0);
 }
 element selected.urgent {
     background-color: var(nord11);
     text-color:       var(nord6);
 }
 element selected.active {
-    background-color: var(nord2);
-    text-color:       var(nord5);
+    background-color: var(nord6);
+    text-color:       var(nord0);
 }
 element alternate.normal {
     background-color: var(nord0);
     text-color:       var(nord6);
 }
 element alternate.urgent {
-    background-color: var(nord12);
-    text-color:       var(nord4);
+    background-color: var(nord11);
+    text-color:       var(nord6);
 }
 element alternate.active {
     background-color: var(nord3);
@@ -267,10 +269,10 @@ scrollbar {
     padding:      0;
     handle-width: 8px ;
     border:       0;
-    handle-color: var(nord6);
+    handle-color: var(nord3);
 }
 mode-switcher {
-    border-color: var(nord14);
+    border-color: var(nord3);
     border:       2px 0px 0px ;
 }
 button {
@@ -278,8 +280,8 @@ button {
     text-color: var(nord6);
 }
 button selected {
-    background-color: var(nord3);
-    text-color:       var(nord4);
+    background-color: var(nord6);
+    text-color:       var(nord0);
 }
 inputbar {
     padding:    1px ;
