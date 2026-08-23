@@ -1,9 +1,23 @@
 {
     "display": {
-        "separator": ": "
+        "separator": " ",
+	"constants" : [
+		"\u001b[103G│"
+		],
+	"bar": {
+		"char": {
+			"elapsed": "█",
+			"total": "░"
+		}
+	},
+	"key": {
+		"width": 18
+	}	
     },
     "logo": {
-	"type": "auto"
+	"type": "file",
+	"source" : "$HOME/.config/fastfetch/logo.txt",
+	"width" : 37
     },
     "general": {
 
@@ -11,94 +25,143 @@
     "modules": [
 	{ 
 		"type" : "custom",
-		"format": "┌──────────software info──────────┐"
+		"format": "╭────────────────────────────────────────────────────────────╮"
 	},
-	
 	{
         	"type" : "OS",
-		"key" : "│ OS"
+		"key" : "│ OS           │{$1}"
 	},
 	{
 		"type" : "Kernel",
-		"key" : "│ Kernel"
+		"key" : "│ Kernel       │{$1}"
 	},
 	{
 		"type" : "Packages",
-		"key" : "│ Packages"
+		"key" : "│ Packages     │{$1}"
+	},
+	{
+		"type" : "WM",
+		"key" : "│ WM           │{$1}"
+	},
+	{
+		"type" : "Theme",
+		"key" : "│ Theme        │{$1}"
+	},
+	{
+		"type" : "Icons",
+		"key" : "│ Icons        │{$1}"
+	},
+	{
+		"type" : "Cursor",
+		"key" : "│ Cursor       │{$1}"
+	},
+	{
+		"type" : "Terminal",
+		"key" : "│ Terminal     │{$1}"
+	},
+	{
+		"type" : "TerminalFont",
+		"key" : "│ Terminal Font│{$1}"
+	},
+	{
+		"type" : "Shell",
+		"key" : "│ Shell        │{$1}"
 	},
 	{
 		"type" : "custom",
-		"format" : "└─────────────────────────────────┘"
-	},
-	{
-		"type" : "custom",
-		"format" : "┌──────────hardware info──────────┐"
+		"format" : "├──────────────┼─────────────────────────────────────────────┤"
 	},
 	{
 		"type" : "CPU",
-		"key"  : "│ CPU"
+		"key"  : "│ CPU          │{$1}"
 	},
 	{
 		"type" : "GPU",
-		"key" : "│ GPU"
+		"key" : "│ GPU          │{$1}"
 	},
 	{
         	"type" : "Host",
-		"key": "│ Host"
+		"key": "│ Host         │{$1}"
 	},
 	{
 		"type" : "Monitor",
-		"key" : "│ Monitor ({2})"
+		"key" : "│ Monitor      │{$1}",
+		"format" : "{width}x{height} @ {refresh-rate} HZ, {ppi} ppi ({name}) "
 	},
 	{
 		"type" : "custom",
-		"format": "└─────────────────────────────────┘"
+		"format": "├──────────────┼─────────────────────────────────────────────┤"
 	},
-	{
-		"type" : "custom",
-		"format" : "┌──────────performance──────────┐"
-
-        },
 	{
 		"type": "CPUUsage",
-		"key": "│ CPU Usage"
+		"key": "│ CPU Usage    │{$1}"
 	},
         {
 		"type" : "Memory",
-		"key" : "│ Memory"
+		"key" : "│ Memory       │{$1}"
 	},
 	{
 		"type" : "Uptime",
-		"key" : "│ Uptime"
+		"key" : "│ Uptime       │{$1}"
 	},
 	{
         	"type" : "Battery",
-		"key" : "│ Battery ({2})"
+		"key" : "│ Battery      │{$1}",
+		"format" : "{capacity} [{status}] ({model-name})"
 	},
 	{
         	"type" : "Disk",
-		"key" : "│ Disk ({1})"
+		"key" : "│ Disk         │{$1}",
+		"format" : "({mountpoint}) {size-used} / {size-total} ({size-percentage}) - {filesystem}"
 	},
-
 	{
 		"type" : "custom",
-		"format" : "└───────────────────────────────┘"
+		"format" : "├──────────────┼─────────────────────────────────────────────┤"
         },
 	{
-		"type" : "custom",
-		"format" : "┌──────────connection──────────┐"
-	},
-	{
 		"type": "WiFi",
-		"key" : "│ WiFi"
+		"key" : "│ WiFi         │{$1}",
+		"format": "{ssid}-{protocol}-{band}GHz {security} {signal-quality}"
 	},
 	{
 		"type" : "LocalIp",
-		"key" : "│ Local IP ({2})"
+		"key" : "│ Local IP     │{$1}",
+		"format" : "({ifname}) {ipv4}"
+	},
+	{
+		"type" : "DNS",
+		"key" : "│ DNS          │{$1}"
 	},
 	{
 		"type" : "custom",
-		"format" : "└──────────────────────────────┘"
+		"format" : "├──────────────┼─────────────────────────────────────────────┤"
+	},
+	{
+		"type": "Player",
+		"key" : "│ Media Player │{$1}"
+	},
+	{
+		"type" : "Media",
+		"key" : "│ Media        │{$1}",
+		"format" : "{artist} - {title}"
+	},
+	{
+		"type" : "Media",
+		"key" : "│ Media pgr    │{$1}",
+		"format" : "{progress} ({progress-num}) - [{status}]"
+	},
+	{
+		"type" : "sound",
+		"key" : "│ Sound        │{$1}",
+		"format" : "{name} ({volume-percentage})"
+	},
+	{
+		"type" : "custom",
+		"format" : "╰──────────────┴─────────────────────────────────────────────╯"
+	},
+	{
+		"type" : "custom",
+		"format" : "               'dont use technology, own it'                "
 	}
     ]
 }
