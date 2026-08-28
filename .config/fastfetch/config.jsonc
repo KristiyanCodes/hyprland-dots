@@ -2,7 +2,7 @@
     "display": {
         "separator": " ",
 	"constants" : [
-		"\u001b[103G│"
+		"\u001b[102G│"
 		],
 	"bar": {
 		"char": {
@@ -15,9 +15,10 @@
 	}	
     },
     "logo": {
-	"type": "file",
-	"source" : "$HOME/.config/fastfetch/logo.txt",
+	"type": "kitty-icat",
+	"source" : "$HOME/.config/fastfetch/3840px-Heckert_GNU_white.svg.png",
 	"width" : 37
+
     },
     "general": {
 
@@ -25,7 +26,7 @@
     "modules": [
 	{ 
 		"type" : "custom",
-		"format": "╭────────────────────────────────────────────────────────────╮"
+		"format": "╭──────────────┬─────────────────────────────────────────────╮"
 	},
 	{
         	"type" : "OS",
@@ -51,6 +52,7 @@
 		"type" : "Icons",
 		"key" : "│ Icons        │{$1}"
 	},
+
 	{
 		"type" : "Cursor",
 		"key" : "│ Cursor       │{$1}"
@@ -73,11 +75,24 @@
 	},
 	{
 		"type" : "CPU",
-		"key"  : "│ CPU          │{$1}"
+		"key"  : "│ CPU          │{$1}",
+		"format" : "{name} ({cores-physical}c {cores-logical}t) - {temperature}",
+		"temp" : true
 	},
 	{
 		"type" : "GPU",
-		"key" : "│ GPU          │{$1}"
+		"key" : "│ GPU          │{$1}",
+		"format" : "{vendor} {name} - [{type}]",
+		"temp" : true,
+		"driverSpecific" : true
+	},
+	{
+		"type" : "GPU",
+		"key" : "│ GPU info     │{$1}",
+		"format" : "{core-count}c - {temperature} - ({dedicated-used} / {dedicated-total})",
+		"temp" : true,
+		"driverSpecific" : true
+
 	},
 	{
         	"type" : "Host",
@@ -102,7 +117,8 @@
 	},
 	{
 		"type" : "Uptime",
-		"key" : "│ Uptime       │{$1}"
+		"key" : "│ Uptime       │{$1}",
+		"format" : "{formatted}, since {boot-time}"
 	},
 	{
         	"type" : "Battery",
@@ -126,7 +142,7 @@
 	{
 		"type" : "LocalIp",
 		"key" : "│ Local IP     │{$1}",
-		"format" : "({ifname}) {ipv4}"
+		"format" : "{ipv4} ({ifname})"
 	},
 	{
 		"type" : "DNS",
@@ -154,6 +170,29 @@
 		"type" : "sound",
 		"key" : "│ Sound        │{$1}",
 		"format" : "{name} ({volume-percentage})"
+	},
+	{
+		"type" : "custom",
+		"format" : "├──────────────┼─────────────────────────────────────────────┤"
+	},
+	{
+		"type" : "Users",
+		"key" : "│ Users        │{$1}",
+		"format" : "{name} - since {login-time}"
+	},
+	{
+		"type" : "DateTime",
+		"key" : "│ Date         │{$1}",
+		"format" : "{weekday} {day-in-month} {month-name} {year}"
+	},
+	{
+		"type" : "DateTime",
+		"key" : "│ Time         │{$1}",
+		"format" : "{hour}:{minute-pretty} ({hour-12-pretty}:{minute-pretty}{am-pm})"
+	},
+	{
+		"type" : "Weather",
+		"key" : "│ Weather      │{$1}"
 	},
 	{
 		"type" : "custom",
