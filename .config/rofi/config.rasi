@@ -13,7 +13,7 @@ configuration {
 /*	on-menu-canceled: ;*/
 /*	on-menu-error: ;*/
 /*	on-screenshot-taken: ;*/
-	terminal: "alacritty";
+	terminal: "kitty";
 	ssh-client: "ssh";
 	ssh-command: "{terminal} -e {ssh_client} {host} [-p {port}]";
 /*	run-command: "{cmd}";*/
