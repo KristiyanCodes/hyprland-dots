@@ -118,7 +118,7 @@
 	{
 		"type" : "Uptime",
 		"key" : "│ Uptime       │{$1}",
-		"format" : "{formatted}, since {boot-time}"
+		"format" : "{formatted}"
 	},
 	{
         	"type" : "Battery",
