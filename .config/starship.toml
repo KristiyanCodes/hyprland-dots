@@ -1,0 +1,73 @@
+add_newline = false
+format = """
+[](#b48ead)\
+$username\
+[](fg:#b48ead bg:#a3be8c)\
+$directory\
+[](fg:#a3be8c bg:#bf616a)\
+$git_branch\
+[](bg:#88c0d0 fg:#bf616a)\
+$git_status\
+[](fg:#88c0d0 bg:#0a4482)\
+$cmd_duration\
+[](fg:#0a4482 bg:#5e81ac)\
+$status\
+[](fg:#5e81ac)\
+"""
+
+[directory]
+truncation_length = 5
+truncate_to_repo = false
+style = "bg:#a3be8c fg:#2e3440"
+format = "[$path]($style)[$read_only]($read_only_style)"
+read_only = " - RO"
+read_only_style = "bold #2e3440"
+disabled = false
+
+[username]
+style_root = "fg:#2e3440 bg:#b48ead"
+style_user = "fg:#2e3440 bg:#b48ead"
+detect_env_vars = []
+format = "[$user]($style)"
+show_always = true
+disabled = false
+
+[git_branch]
+always_show_remote = false
+format = "[$symbol$branch(:$remotebranch)]($style)"
+style = "bg:#bf616a fg:#eceff4" 
+truncation_length = 4
+truncation_symbol = "..."
+ignore_branches = []
+disabled = false
+
+[git_status]
+format = "[$all_status$ahead_behind]($style)"
+conflicted = "="
+ahead = ""
+behind = "" 
+diverged = "󰹺"
+untracked = "?"
+up_to_date = ""
+style = "fg:#2e3440 bg:#88c0d0"
+
+[status]
+symbol = "[  ](bg:#5e81ac fg:#ff2929)"
+success_symbol = "[  ](bg:#5e81ac fg:#34e360)"
+not_executable_symbol = "[ 󰂭 ](bg:#5e81ac fg:#bf616a)"
+not_found_symbol = "[ 󰍉 ](bg:#5e81ac fg:#eceff4)"
+signal_symbol = "[ 󱐋 ](bg:#5e81ac fg:#ebcb8b)"
+sigint_symbol = "[  ](bg:#5e81ac fg:#eceff4)"
+recognize_signal_code = true
+map_symbol = true
+pipestatus = false
+style = "bg:#5e81ac"
+format = "$symbol"
+disabled = false
+
+[cmd_duration]
+min_time = 0
+show_milliseconds = true
+format = "[took $duration]($style)"
+style = "fg:#eceff4 bg:#0a4482"
+show_notifications = false
