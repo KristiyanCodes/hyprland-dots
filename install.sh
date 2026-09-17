@@ -1,4 +1,8 @@
 #!/usr/bin/bash
+set -e
+
+echo "im sorry if this script dosen't work im not this good at these type of scripts"
+
 cd $HOME/hyprland-dots*
 echo "installing deps"
 which yay || { echo "yay not installed, please install it to continue"; exit 1; }
