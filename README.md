@@ -58,7 +58,7 @@ a list of packages that you need are in pkglist.txt
 | super + ctrl + v           | open clipboard menu: selected item will be deleted |
 | super + l                  | lock                                               |
 | super + shift + l          | open logout menu                                   |
-
+| super + s                  | run theme switcher script                          |
 # how to use the dotfiles 
 method 1: run install.sh
 note: the script only works on arch for now
