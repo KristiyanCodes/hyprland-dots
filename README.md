@@ -1,6 +1,8 @@
 # my hyprland dots
 the're not fully finished so dont expect them to be flawless but they are definitly usable
 a list of packages that you need are in pkglist.txt
+<video src="https://raw.githubusercontent.com/KristiyanCodes/hyprland-dots/main/demo.mp4" controls width="100%"></video>
+
 
 # binds
 
