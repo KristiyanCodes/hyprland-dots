@@ -24,3 +24,4 @@ xdg-desktop-portal-hyprland
 zsh
 wlogout
 playerctl
+fastfetch
