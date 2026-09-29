@@ -13,3 +13,5 @@ setopt SHARE_HISTORY
 
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
+
+eval "$(starship init zsh)"
