@@ -1,8 +1,8 @@
 # my hyprland dots
 the're not fully finished so dont expect them to be flawless but they are definitly usable
 a list of packages that you need are in pkglist.txt
-<video src="https://raw.githubusercontent.com/KristiyanCodes/hyprland-dots/main/demo.mp4" controls width="100%"></video>
 
+<video src="https://raw.githubusercontent.com/KristiyanCodes/hyprland-dots/main/demo.mp4" controls width="100%"></video>
 
 # binds
 
@@ -62,13 +62,20 @@ a list of packages that you need are in pkglist.txt
 | super + shift + l          | open logout menu                                   |
 | super + s                  | run theme switcher script                          |
 # how to use the dotfiles 
-method 1: run install.sh
+
+- method 1:
+run the install script via curl and bash
+
+```bash
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/KristiyanCodes/hyprland-dots/main/install.sh)"
+```
+method 2: run install.sh
 note: the script only works on arch for now
 ```bash
 chmod +x install.sh
 ./install.sh
 ```
-method 2: install the dependencies and move/ copy dotfiles manualy
+method 3: install the dependencies and move/ copy dotfiles manualy
 - install the packages in pkglist.txt
 ```bash
 arch: yay -S $(cat pkglist.txt)

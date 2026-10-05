@@ -2,6 +2,7 @@
 set -e
 
 echo "im sorry if this script dosen't work im not this good at these type of scripts"
+echo "currently ths script only works on arch, sorry if your on a other distro"
 
 echo "pulling repository to ram"
 cd /tmp
